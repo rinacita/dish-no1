@@ -6,8 +6,9 @@
 
 <style lang="scss">
 html {
-  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial,
-    'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+  font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont,
+    'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
+    Meiryo, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -15,6 +16,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  color: white;
 }
 
 *,
