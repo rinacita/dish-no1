@@ -4,14 +4,45 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'dish-no1',
+    title: 'DISH 13th Single「No.1」特設サイト',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'ja',
+      prefix: 'og: http://ogp.me/ns#',
     },
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1, viewport-fit=cover',
+      },
       { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: '',
+      },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: '',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: '',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: '',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: '',
+      },
+      { name: 'twitter:card', content: 'summary_large_image' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
