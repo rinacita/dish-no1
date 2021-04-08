@@ -60,6 +60,13 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxtjs/google-fonts',
+    {
+      families: {
+        'Noto+Sans+JP': [400, 700],
+      },
+      display: 'swap',
+    },
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
