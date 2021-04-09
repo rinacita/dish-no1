@@ -4,23 +4,34 @@
   a(href="https://www.youtube.com/watch?v=jlwOlzVK5kY&t=2s")
     .image
       img(src="~assets/image/hero.jpeg")
+    .desc ヒロアカ5期OP
 
 
 </template>
 
 <style lang="scss" scoped>
+@import '~/assets/css/variables.scss';
 .wrapper {
   width: 100%;
-  padding: 80px 32px;
+  padding: 120px 32px;
   background: black;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include mq(md) {
+    padding: 80px 32px;
+  }
 }
 
 .title {
-  width: 120px;
-  margin-bottom: 44px;
+  width: 200px;
+  margin-bottom: 72px;
+
+  @include mq(md) {
+    width: 120px;
+    margin-bottom: 44px;
+  }
 }
 
 .image {
@@ -72,6 +83,15 @@
 
 .image:hover:before {
   opacity: 1;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.desc {
+  margin-top: 16px;
 }
 // .movies {
 //   width: 100%;

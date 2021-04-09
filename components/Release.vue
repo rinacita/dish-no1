@@ -28,10 +28,11 @@
 
 img.main {
   width: 70vw;
-  margin-bottom: 64px;
+  margin-bottom: 120px;
 
   @include mq(md) {
     width: 100%;
+    margin-bottom: 64px;
   }
 }
 
@@ -43,18 +44,25 @@ img.main {
 
   padding: 0 48px;
   width: 100%;
-  max-width: 480px;
+  max-width: 560px;
 
   h4 {
+    font-size: 1rem;
     font-weight: 400;
-    margin-bottom: 48px;
+    margin-bottom: 56px;
+
+    @include mq(md) {
+      font-size: 0.8rem;
+      letter-spacing: 0.05rem;
+      margin-bottom: 48px;
+    }
   }
 
-  img {
+  > img {
     width: 100%;
 
     &:first-of-type {
-      margin-bottom: 32px;
+      margin-bottom: 56px;
     }
 
     &.release__download {
@@ -64,6 +72,21 @@ img.main {
       &:hover {
         opacity: 0.7;
       }
+    }
+
+    @include mq(md) {
+      &:first-of-type {
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  a {
+    width: 100%;
+    max-width: 400px;
+
+    img {
+      width: 100%;
     }
   }
 }
