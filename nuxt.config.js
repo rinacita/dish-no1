@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'DISH 13th Single「No.1」特設サイト',
+    title: 'DISH//「No.1」Special Site',
     htmlAttrs: {
       lang: 'ja',
       prefix: 'og: http://ogp.me/ns#',
@@ -15,32 +15,38 @@ export default {
         name: 'viewport',
         content: 'width=device-width, initial-scale=1, viewport-fit=cover',
       },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'TVアニメ「僕のヒーローアカデミア」オープニングテーマ、4/10配信シングルDISH//「No.1」スペシャルサイト。',
+      },
       {
         hid: 'og:site_name',
         property: 'og:site_name',
-        content: '',
+        content: 'DISH//「No.1」Special Site',
       },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
         hid: 'og:url',
         property: 'og:url',
-        content: '',
+        content: 'https://www.sonymusic.co.jp/Music/Info/DISH/No1/',
       },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: '',
+        content: 'DISH//「No.1」Special Site',
       },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: '',
+        content:
+          'TVアニメ「僕のヒーローアカデミア」オープニングテーマ、4/10配信シングルDISH//「No.1」スペシャルサイト。',
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: '',
+        content: 'https://www.sonymusic.co.jp/Music/Info/DISH/No1/img/ogp.png',
       },
       { name: 'twitter:card', content: 'summary_large_image' },
     ],
@@ -49,6 +55,11 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ['@/assets/css/common.scss', '@/assets/css/styles.scss'],
+
+  router: {
+    base: '/dish-no1/',
+    // base: '/Music/Info/DISH/No1/',
+  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: ['~/plugins/vue-jsonp'],
