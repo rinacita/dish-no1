@@ -1,9 +1,23 @@
 <template lang="pug">
 .wrapper
-  top
-  release
-  movie
-  topics
+  a.menu(@click="clicked")
+    span.menu__line.menu__line--top(:class="{ 'active': menuActive }")
+    span.menu__line.menu__line--bottom(:class="{ 'active': menuActive }")
+  nav.gnav(:style="{ display: menuActive ? 'block' : 'none' }")
+    .gnav__wrap
+      ul.gnav__menu
+        li.gnav__menu__item
+          a(href="#top" @click="menuActive = false") TOP
+        li.gnav__menu__item
+          a(href="#release" @click="menuActive = false") RELEASE
+        li.gnav__menu__item
+          a(href="#movie" @click="menuActive = false") MOVIE
+        li.gnav__menu__item
+          a(href="#topics" @click="menuActive = false") TOPICS
+  top#top
+  release#release 
+  movie#movie 
+  topics#topics 
   footer Copy ©︎ Sony Music Records All rights reserved.
 </template>
 
@@ -20,10 +34,95 @@ export default {
     Movie,
     Topics,
   },
+  data() {
+    return {
+      menuActive: false,
+    }
+  },
+  methods: {
+    clicked() {
+      this.menuActive = !this.menuActive
+    },
+  },
 }
 </script>
 
 <style lang="scss" scoped>
+/*menu*/
+.menu {
+  color: white;
+  height: 12px;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  width: 30px;
+  z-index: 99;
+}
+.menu__line {
+  background: white;
+  display: block;
+  height: 2px;
+  position: absolute;
+  transition: transform 0.3s;
+  width: 100%;
+}
+.menu__line--bottom {
+  bottom: 0;
+}
+.menu__line--top.active {
+  top: 4px;
+  transform: rotate(45deg);
+  background: white;
+}
+.menu__line--bottom.active {
+  bottom: 6px;
+  transform: rotate(135deg);
+  background: white;
+}
+/*gnav*/
+.gnav {
+  color: white;
+  background: black;
+  // display: none;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 98;
+  transition: 0.3s;
+}
+.gnav__wrap {
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  margin: auto;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gnav__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gnav__menu__item {
+  margin: 3rem 0;
+  a {
+    color: #f4f6f7;
+    font-family: 'TS';
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding: 2.5rem;
+    text-decoration: none;
+    transition: 0.2s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
 footer {
   background: #131314;
   color: white;
