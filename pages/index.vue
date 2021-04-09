@@ -48,6 +48,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/css/variables.scss';
 /*menu*/
 .menu {
   color: white;
@@ -108,6 +109,11 @@ export default {
 }
 .gnav__menu__item {
   margin: 3rem 0;
+
+  @include mq(md) {
+    margin: 2rem 0;
+  }
+
   a {
     color: #f4f6f7;
     font-family: 'TS';
@@ -119,6 +125,10 @@ export default {
     transition: 0.2s;
     &:hover {
       opacity: 0.7;
+    }
+
+    @include mq(md) {
+      font-size: 1.2rem;
     }
   }
 }

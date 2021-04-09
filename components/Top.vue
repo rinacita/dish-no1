@@ -41,14 +41,18 @@
 }
 
 .wrapper {
-  background: red;
+  background: black;
   width: 100%;
   height: 100vh;
-  height: -webkit-fill-available;
 
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+_:lang(x) + _:-webkit-full-screen-document,
+.wrapper {
+  height: -webkit-fill-available;
 }
 
 .top-horizontal {
