@@ -41,9 +41,10 @@
 }
 
 .wrapper {
-  background: black;
+  background: red;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  height: -webkit-fill-available;
 
   display: flex;
   align-items: center;
