@@ -87,13 +87,14 @@ export default {
     font-size: 1.3rem;
     font-weight: 700;
     @include mq(md) {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
   }
 
   &__product-no {
     margin-top: 32px;
     font-size: 0.9rem;
+    font-weight: 400;
     white-space: pre-wrap;
     line-height: 1.4rem;
 
@@ -128,7 +129,10 @@ export default {
     font-size: 0.9rem;
     line-height: 1.2rem;
     @include mq(md) {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
+      line-height: 1.4rem;
+      font-weight: 400;
+      margin-top: 8px;
     }
   }
 }
