@@ -34,7 +34,7 @@ export default {
 .wrapper {
   width: 100%;
   padding: 120px 32px;
-  background: #131314;
+  background: black;
   display: flex;
   flex-direction: column;
   align-items: center;

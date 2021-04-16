@@ -140,7 +140,7 @@ export default {
 }
 
 footer {
-  background: #131314;
+  background: black;
   color: white;
   font-size: 0.75rem;
   width: 100%;
