@@ -14,7 +14,7 @@
 .wrapper {
   width: 100%;
   padding: 120px 32px;
-  background: black;
+  background: #131314;
   display: flex;
   flex-direction: column;
   align-items: center;
