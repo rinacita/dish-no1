@@ -2,11 +2,14 @@
 .wrapper
   .albums
     .album(v-for="album in albumData" :key="album.id")
-      //- .album__jacket
-      //-   .album__image
+      .album__jacket
+        .album__image
+          img(src="~assets/image/now_printing.svg")
       .album__info
         .album__title {{ album.title }}
         .album__product-no {{ album.product }}
+        a.album__link(:href="album.link")
+          img(src="~assets/image/reserved.svg")
         .album__playlists
           .playlist(v-for="playlist in album.playlists" :key="playlist.id")
             .playlist__title {{ playlist.title }}
@@ -35,8 +38,8 @@ export default {
 
 .albums {
   // background: red;
-  // max-width: 70vw;
-  max-width: 640px;
+  max-width: 70vw;
+  // max-width: 640px;
   margin: 0 auto;
   padding: 80px 32px;
 
@@ -63,7 +66,19 @@ export default {
   &__image {
     width: 30vw;
     height: 30vw;
-    background: gray;
+    background: #202020;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 180px;
+
+      @include mq(md) {
+        width: 150px;
+      }
+    }
 
     @include mq(md) {
       width: 100%;
@@ -74,7 +89,7 @@ export default {
   }
 
   &__info {
-    // margin-left: 8vw;
+    margin-left: 8vw;
     padding-top: 16px;
 
     @include mq(md) {
@@ -100,6 +115,24 @@ export default {
 
     @include mq(md) {
       font-size: 0.8rem;
+    }
+  }
+
+  &__link {
+    img {
+      margin-top: 32px;
+      max-width: 240px;
+      width: 100%;
+      opacity: 1;
+      transition: opacity 0.2s;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      @include mq(md) {
+        max-width: none;
+      }
     }
   }
 
