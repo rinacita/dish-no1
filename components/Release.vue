@@ -2,7 +2,7 @@
 .wrapper 
   img.main(src="~assets/image/main.jpg")
   .release
-    img.release__title(src="~assets/image/release.svg")
+    img.release__title(src="~assets/image/release_sub.svg")
     h4 読売テレビ・日本テレビ系全国29局ネット<br>TVアニメ『僕のヒーローアカデミア』<br>第5期オープニングテーマ
     a(href="https://dish.lnk.to/No1_AW")
       img.release__download(src="~assets/image/download.svg")
