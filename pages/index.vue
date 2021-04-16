@@ -130,7 +130,7 @@ export default {
     font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
-    padding: 2.5rem;
+    // padding: 2.5rem;
     text-decoration: none;
     transition: 0.2s;
     &:hover {
@@ -139,6 +139,10 @@ export default {
 
     img {
       height: 20px;
+
+      @include mq(md) {
+        height: 16px;
+      }
     }
 
     @include mq(md) {
