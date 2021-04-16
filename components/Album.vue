@@ -2,8 +2,8 @@
 .wrapper
   .albums
     .album(v-for="album in albumData" :key="album.id")
-      .album__jacket
-        .album__image
+      //- .album__jacket
+      //-   .album__image
       .album__info
         .album__title {{ album.title }}
         .album__product-no {{ album.product }}
@@ -34,7 +34,9 @@ export default {
 }
 
 .albums {
-  max-width: 70vw;
+  // background: red;
+  // max-width: 70vw;
+  max-width: 640px;
   margin: 0 auto;
   padding: 80px 32px;
 
@@ -45,6 +47,7 @@ export default {
 }
 
 .album {
+  // background: blue;
   display: flex;
   flex-direction: row;
   margin-bottom: 160px;
@@ -71,7 +74,7 @@ export default {
   }
 
   &__info {
-    margin-left: 8vw;
+    // margin-left: 8vw;
     padding-top: 16px;
 
     @include mq(md) {

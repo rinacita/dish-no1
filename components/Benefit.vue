@@ -49,7 +49,7 @@ export default {
 }
 
 .benefit {
-  background: #222;
+  // background: #222;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,22 +58,29 @@ export default {
   &__title {
     font-size: 1.4rem;
     font-weight: 700;
+
+    margin-bottom: 32px;
   }
 
   &__goods {
     display: flex;
+
+    flex-direction: column;
   }
 }
 
 .good {
-  background: #444;
-  min-width: 300px;
-  min-height: 300px;
+  // background: #444;
+  // min-width: 300px;
+  // min-height: 300px;
 
   &__image {
-    background: #666;
-    width: 200px;
-    height: 200px;
+    // background: #666;
+    // width: 200px;
+    // height: 200px;
+    display: none;
   }
+
+  padding: 8px;
 }
 </style>
