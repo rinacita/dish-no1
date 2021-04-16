@@ -7,13 +7,17 @@
     .gnav__wrap
       ul.gnav__menu
         li.gnav__menu__item
-          a(href="#top" @click="menuActive = false") TOP
+          a(href="#top" @click="menuActive = false")
+            img(src="~/assets/image/top.svg")
         li.gnav__menu__item
-          a(href="#release" @click="menuActive = false") RELEASE
+          a(href="#release" @click="menuActive = false")
+            img(src="~/assets/image/release.svg")
         li.gnav__menu__item
-          a(href="#movie" @click="menuActive = false") MOVIE
+          a(href="#movie" @click="menuActive = false")
+            img(src="~/assets/image/movie.svg")
         li.gnav__menu__item
-          a(href="#topics" @click="menuActive = false") TOPICS
+          a(href="#topics" @click="menuActive = false")
+            img(src="~/assets/image/topics.svg")
   top#top
   release#release 
   album#album
@@ -122,7 +126,7 @@ export default {
 
   a {
     color: #f4f6f7;
-    font-family: 'TS';
+    // font-family: 'TS';
     font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
@@ -131,6 +135,10 @@ export default {
     transition: 0.2s;
     &:hover {
       opacity: 0.7;
+    }
+
+    img {
+      height: 20px;
     }
 
     @include mq(md) {

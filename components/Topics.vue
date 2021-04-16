@@ -66,12 +66,14 @@ a {
 }
 
 .topics__date {
-  font-family: 'TS';
+  // font-family: 'TS';
+  font-weight: 900;
   margin-bottom: 16px;
 }
 
 .topics__item-title {
   margin-bottom: 20px;
+  font-weight: 400;
 
   @include mq(md) {
     font-size: 0.8rem;
