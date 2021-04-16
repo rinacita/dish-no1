@@ -1,0 +1,82 @@
+[
+  {
+    "id": 0,
+    "title": "初回生産限定盤",
+    "image": "",
+    "product": "CD+DVD\nデジパック仕様\nSRCL-11757～11758\n￥1,900（税別）",
+    "playlists": [
+      {
+        "id": 0,
+        "title": "CD",
+        "tracks": [
+          { "id": 0, "name": "01. No.1" },
+          { "id": 1, "name": "02. 宇宙船" },
+          { "id": 2, "name": "03. 愛の導火線（Live from 「LIVE TOUR -DISH- 2019～2020 PACIFICO YOKOHAMA」）" },
+          { "id": 3, "name": "04. No.1（instrumental）" },
+          { "id": 4, "name": "05. バースデー（instrumental）" }
+        ]
+      },
+      {
+        "id": 1,
+        "title": "DVD",
+        "tracks": [
+          { "id": 0, "name": "01. 「No.1」Music Video" },
+          { "id": 1, "name": "02. 「あたりまえ」Music Video" },
+          { "id": 2, "name": "03. 「ルーザー」Music Video" },
+          { "id": 3, "name": "04. 「あたりまえ」Making of Music Video" },
+          { "id": 4, "name": "05. 「ルーザー」 Making of Music Video" },
+          { "id": 5, "name": "06. 「No.1」 Making of Music Video" },
+          { "id": 6, "name": "07.  4thアルバム『X』クロスフェード" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "title": "通常盤",
+    "image": "",
+    "product": "CD Only\nSRCL-11759\n￥1,300（税別）",
+    "playlists": [
+      {
+        "id": 0,
+        "title": "CD",
+        "tracks": [
+          { "id": 0, "name": "01. No.1" },
+          { "id": 1, "name": "02. 缶ビール" },
+          { "id": 2, "name": "03. birds（Live from 「LIVE TOUR -DISH- 2019〜2020 PACIFICO YOKOHAMA」" },
+          { "id": 3, "name": "04. No.1（instrumental）" },
+          { "id": 4, "name": "05. 猫 〜THE FIRST TAKE ver.〜（instrumental）" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "期間生産限定盤",
+    "image": "",
+    "product": "CD+DVD\nデジパック 「僕のヒーロアカデミア」特別絵柄ジャケット\nSRCL-11760～11761\n￥1,600（税別）",
+    "playlists": [
+      {
+        "id": 0,
+        "title": "CD",
+        "tracks": [
+          { "id": 0, "name": "01. No.1" },
+          { "id": 1, "name": "02. KICK-START" },
+          { "id": 2, "name": "03. 勝手にMY SOUL（Live from 「LIVE TOUR -DISH- 2019〜2020 PACIFICO YOKOHAMA」）" },
+          { "id": 3, "name": "04. No.1（instrumental）" },
+          { "id": 4, "name": "05. ルーザー（instrumental）" },
+          { "id": 5, "name": "06. No.1（TV size）" }
+        ]
+      },
+      {
+        "id": 1,
+        "title": "DVD",
+        "tracks": [
+          { "id": 0, "name": "01. 「No.1」Music Video" },
+          { "id": 1, "name": "02. 「僕のヒーローアカデミア」ノンクレジットオープニングムービー" },
+          { "id": 2, "name": "03.  4thアルバム『X』クロスフェード" }
+        ]
+      }
+    ]
+  }
+]

@@ -16,6 +16,8 @@
           a(href="#topics" @click="menuActive = false") TOPICS
   top#top
   release#release 
+  album#album
+  benefit#benefit
   movie#movie 
   topics#topics 
   footer Copy ©︎ Sony Music Records All rights reserved.
@@ -24,6 +26,8 @@
 <script>
 import Top from '~/components/Top'
 import Release from '~/components/Release'
+import Benefit from '~/components/Benefit'
+import Album from '~/components/Album'
 import Movie from '~/components/Movie'
 import Topics from '~/components/Topics'
 
@@ -31,6 +35,8 @@ export default {
   components: {
     Top,
     Release,
+    Benefit,
+    Album,
     Movie,
     Topics,
   },
