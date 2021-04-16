@@ -46,6 +46,11 @@ export default {
   max-width: 560px;
   font-size: 1rem;
   line-height: 1.4rem;
+
+  @include mq(md) {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
 }
 
 .benefit {
@@ -79,6 +84,10 @@ export default {
     // width: 200px;
     // height: 200px;
     display: none;
+  }
+
+  &__title {
+    font-weight: 400;
   }
 
   padding: 8px;
