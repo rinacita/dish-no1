@@ -25,16 +25,23 @@
   @return $glitchHeight * ((135 - 64) / 2500) / 2;
 }
 
+@function glitchWidth($glitchHeight) {
+  @return $glitchHeight * (110 / 308);
+}
+
 @mixin imgHeight($glitchHeight) {
   img {
     &.top-dish {
       height: dishHeight($glitchHeight);
+      width: auto;
     }
     &.top-glitch {
       height: $glitchHeight;
+      width: glitchWidth($glitchHeight);
     }
     &.top-no1 {
       height: no1Height($glitchHeight);
+      width: auto;
       margin-bottom: diffHeight($glitchHeight);
     }
   }
