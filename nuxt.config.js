@@ -57,8 +57,8 @@ export default {
   css: ['@/assets/css/common.scss', '@/assets/css/styles.scss'],
 
   router: {
-    // base: '/dish-no1/',
-    base: '/Music/Info/DISH/No1/',
+    base: '/dish-no1/',
+    // base: '/Music/Info/DISH/No1/',
   },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

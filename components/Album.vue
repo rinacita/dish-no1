@@ -4,7 +4,7 @@
     .album(v-for="album in albumData" :key="album.id")
       .album__jacket
         .album__image
-          img(src="~assets/image/now_printing.svg")
+          img(:src="require(`~/assets/image/${album.image}.jpg`)")
       .album__info
         .album__title {{ album.title }}
         .album__product-no {{ album.product }}
@@ -37,9 +37,7 @@ export default {
 }
 
 .albums {
-  // background: red;
   max-width: 70vw;
-  // max-width: 640px;
   margin: 0 auto;
   padding: 80px 32px;
 
@@ -50,7 +48,6 @@ export default {
 }
 
 .album {
-  // background: blue;
   display: flex;
   flex-direction: row;
   margin-bottom: 160px;
@@ -65,26 +62,14 @@ export default {
 
   &__image {
     width: 30vw;
-    height: 30vw;
     background: #202020;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    img {
-      width: 180px;
-
-      @include mq(md) {
-        width: 150px;
-      }
-    }
-
     @include mq(md) {
       width: 100%;
-      // 後で変更
-      // 画像だからそもそもheightいらない？
-      height: 240px;
     }
   }
 
