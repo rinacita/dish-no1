@@ -75,8 +75,9 @@ export default {
 
   &__desc {
     margin-top: 16px;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     line-height: 1.3rem;
+    font-weight: 400;
   }
 
   &__info {
