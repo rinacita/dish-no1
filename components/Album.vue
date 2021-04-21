@@ -5,6 +5,7 @@
       .album__jacket
         .album__image
           img(:src="require(`~/assets/image/${album.image}.jpg`)")
+        .album__desc(v-if="album.id == 2") &copy;堀越耕平／集英社･僕のヒーローアカデミア製作委員会
       .album__info
         .album__title {{ album.title }}
         .album__product-no {{ album.product }}
@@ -62,7 +63,6 @@ export default {
 
   &__image {
     width: 30vw;
-    background: #202020;
 
     display: flex;
     justify-content: center;
@@ -71,6 +71,12 @@ export default {
     @include mq(md) {
       width: 100%;
     }
+  }
+
+  &__desc {
+    margin-top: 16px;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
   }
 
   &__info {
