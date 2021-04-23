@@ -17,7 +17,7 @@ export default {
   },
   async mounted() {
     await this.$jsonp(
-      'https://www.sonymusic.co.jp/json/v2/artist/DISH/information/list/start/0/count/2',
+      'https://www.sonymusic.co.jp/json/v2/artist/DISH/information/list/start/0/count/999',
       {
         callbackName: 'callback',
       }
