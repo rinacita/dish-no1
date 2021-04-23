@@ -88,10 +88,21 @@
 a {
   color: white;
   text-decoration: none;
+
+  &:not(:last-of-type) {
+    margin-bottom: 64px;
+  }
 }
 
 .desc {
   margin-top: 16px;
+  font-size: 1rem;
+  line-height: 1.4rem;
+
+  @include mq(md) {
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+  }
 }
 // .movies {
 //   width: 100%;
