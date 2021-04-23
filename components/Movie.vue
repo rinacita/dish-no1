@@ -1,10 +1,6 @@
 <template lang="pug">
 .wrapper
   img.title(src="~assets/image/movie.svg")
-  a(href="https://www.youtube.com/watch?v=S3bd-X1Dlss")
-    .image
-      img(src="http://img.youtube.com/vi/S3bd-X1Dlss/maxresdefault.jpg")
-    .desc DISH// 『No.1』 MUSIC VIDEO TEASER
   a(href="https://www.youtube.com/watch?v=jlwOlzVK5kY")
     .image
       img(src="http://img.youtube.com/vi/jlwOlzVK5kY/maxresdefault.jpg")
