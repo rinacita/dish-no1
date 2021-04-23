@@ -11,7 +11,7 @@
         "title": "CD",
         "tracks": [
           { "id": 0, "name": "01. No.1" },
-          { "id": 1, "name": "02. 宇宙船" },
+          { "id": 1, "name": "02. 宇宙船（作曲：泉大智、作詞：北村匠海）" },
           { "id": 2, "name": "03. 愛の導火線（Live from 「LIVE TOUR -DISH- 2019～2020 PACIFICO YOKOHAMA」）" },
           { "id": 3, "name": "04. No.1（instrumental）" },
           { "id": 4, "name": "05. バースデー（instrumental）" }
@@ -44,7 +44,7 @@
         "title": "CD",
         "tracks": [
           { "id": 0, "name": "01. No.1" },
-          { "id": 1, "name": "02. 缶ビール" },
+          { "id": 1, "name": "02. 缶ビール（作詞作曲：橘柊生）" },
           { "id": 2, "name": "03. birds（Live from 「LIVE TOUR -DISH- 2019〜2020 PACIFICO YOKOHAMA」" },
           { "id": 3, "name": "04. No.1（instrumental）" },
           { "id": 4, "name": "05. 猫 〜THE FIRST TAKE ver.〜（instrumental）" }
