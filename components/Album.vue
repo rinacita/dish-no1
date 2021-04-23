@@ -75,8 +75,17 @@ export default {
 
   &__desc {
     margin-top: 16px;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     line-height: 1.3rem;
+    font-weight: 400;
+
+    @media only screen and (max-width: 375px) {
+      font-size: 0.7rem;
+    }
+
+    @include mq(xs) {
+      font-size: 0.57rem;
+    }
   }
 
   &__info {
