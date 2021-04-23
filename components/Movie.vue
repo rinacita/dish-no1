@@ -1,9 +1,9 @@
 <template lang="pug">
 .wrapper
   img.title(src="~assets/image/movie.svg")
-  a(href="https://www.youtube.com/watch?v=jlwOlzVK5kY&t=2s")
+  a(href="https://www.youtube.com/watch?v=jlwOlzVK5kY")
     .image
-      img(src="~assets/image/hero.jpeg")
+      img(src="http://img.youtube.com/vi/jlwOlzVK5kY/maxresdefault.jpg")
     .desc ヒロアカ5期OP
 
 
