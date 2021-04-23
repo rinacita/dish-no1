@@ -1,9 +1,13 @@
 <template lang="pug">
 .wrapper
   img.title(src="~assets/image/movie.svg")
-  a(href="https://www.youtube.com/watch?v=jlwOlzVK5kY&t=2s")
+  a(href="https://www.youtube.com/watch?v=S3bd-X1Dlss")
     .image
-      img(src="~assets/image/hero.jpeg")
+      img(src="http://img.youtube.com/vi/S3bd-X1Dlss/maxresdefault.jpg")
+    .desc DISH// 『No.1』 MUSIC VIDEO TEASER
+  a(href="https://www.youtube.com/watch?v=jlwOlzVK5kY")
+    .image
+      img(src="http://img.youtube.com/vi/jlwOlzVK5kY/maxresdefault.jpg")
     .desc ヒロアカ5期OP
 
 
@@ -88,10 +92,21 @@
 a {
   color: white;
   text-decoration: none;
+
+  &:not(:last-of-type) {
+    margin-bottom: 64px;
+  }
 }
 
 .desc {
   margin-top: 16px;
+  font-size: 1rem;
+  line-height: 1.4rem;
+
+  @include mq(md) {
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+  }
 }
 // .movies {
 //   width: 100%;
