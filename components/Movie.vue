@@ -1,6 +1,10 @@
 <template lang="pug">
 .wrapper
   img.title(src="~assets/image/movie.svg")
+  a(href="https://www.youtube.com/watch?v=ujCFRKfzPxA")
+    .image
+      img(src="http://img.youtube.com/vi/ujCFRKfzPxA/maxresdefault.jpg")
+    .desc DISH// 『No.1』 MAKING MOVIE DIGEST
   a(href="https://www.youtube.com/watch?v=PyFQzoJJz_8")
     .image
       img(src="http://img.youtube.com/vi/PyFQzoJJz_8/maxresdefault.jpg")
